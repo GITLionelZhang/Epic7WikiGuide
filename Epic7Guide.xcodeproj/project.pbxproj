@@ -1,0 +1,853 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C100B7761F62AF600067152F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = C100B7751F62AF600067152F /* Podfile */; };
+		C140BE111F69137000D6B9AA /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C140BE101F69137000D6B9AA /* libxml2.2.tbd */; };
+		C140BE131F69137A00D6B9AA /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C140BE121F69137A00D6B9AA /* libxml2.tbd */; };
+		C140BE191F69172800D6B9AA /* HeroTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C140BE181F69172800D6B9AA /* HeroTableViewCell.xib */; };
+		C16208812234CF07003D41CE /* HeroDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C162084D2234CF07003D41CE /* HeroDetailViewController.m */; };
+		C16208822234CF07003D41CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C162084E2234CF07003D41CE /* Assets.xcassets */; };
+		C16208832234CF07003D41CE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C162084F2234CF07003D41CE /* ViewController.m */; };
+		C16208852234CF07003D41CE /* OhBikeXmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C16208592234CF07003D41CE /* OhBikeXmlParser.m */; };
+		C16208862234CF07003D41CE /* IdolTvTimeStampUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = C162085A2234CF07003D41CE /* IdolTvTimeStampUtil.mm */; };
+		C16208872234CF07003D41CE /* IdolTvTypeConvertUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = C162085B2234CF07003D41CE /* IdolTvTypeConvertUtil.m */; };
+		C16208882234CF07003D41CE /* CheckDeviceImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = C162085C2234CF07003D41CE /* CheckDeviceImagePicker.m */; };
+		C16208892234CF07003D41CE /* UIImage+UIImageExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = C162085E2234CF07003D41CE /* UIImage+UIImageExtras.m */; };
+		C162088A2234CF07003D41CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C162085F2234CF07003D41CE /* LaunchScreen.storyboard */; };
+		C162088B2234CF07003D41CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C16208612234CF07003D41CE /* Main.storyboard */; };
+		C162088C2234CF07003D41CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C16208632234CF07003D41CE /* main.m */; };
+		C162088D2234CF07003D41CE /* IdolTvHttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C16208652234CF07003D41CE /* IdolTvHttpManager.m */; };
+		C162088E2234CF07003D41CE /* HeroTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C16208722234CF07003D41CE /* HeroTableViewCell.m */; };
+		C162088F2234CF07003D41CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C16208742234CF07003D41CE /* AppDelegate.m */; };
+		C16208902234CF07003D41CE /* GameDataInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = C16208762234CF07003D41CE /* GameDataInstance.m */; };
+		C16208912234CF07003D41CE /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = C162087A2234CF07003D41CE /* UserData.m */; };
+		C16208922234CF07003D41CE /* FOT-NewRodinProN-DB.otf in Resources */ = {isa = PBXBuildFile; fileRef = C162087D2234CF07003D41CE /* FOT-NewRodinProN-DB.otf */; };
+		C16208932234CF07003D41CE /* FOT-ComicReggaeStd-B.otf in Resources */ = {isa = PBXBuildFile; fileRef = C162087E2234CF07003D41CE /* FOT-ComicReggaeStd-B.otf */; };
+		C17AF5492234ED61008210CB /* Epic7GuideItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C17AF5482234ED61008210CB /* Epic7GuideItem.m */; };
+		C17AF54C22356626008210CB /* GuideDetailPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C17AF54B22356626008210CB /* GuideDetailPageViewController.m */; };
+		FF3FE89CB9B34DF6DE38D35C /* Pods_Epic7Guide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B5AA471D6579EF3519E5F40 /* Pods_Epic7Guide.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C100B7591F62AF100067152F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C100B7371F62AF0F0067152F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C100B73E1F62AF0F0067152F;
+			remoteInfo = GameWithMonsterList;
+		};
+		C100B7641F62AF100067152F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C100B7371F62AF0F0067152F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C100B73E1F62AF0F0067152F;
+			remoteInfo = GameWithMonsterList;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		103484C9DF4E3800535FF26F /* Pods-Epic7Guide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Epic7Guide.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Epic7Guide/Pods-Epic7Guide.debug.xcconfig"; sourceTree = "<group>"; };
+		293E96385753389BA2300AFD /* Pods_GameWithMonsterList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GameWithMonsterList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30AB5EE525C3E7682F278ABA /* Pods-GameWithMonsterList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameWithMonsterList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GameWithMonsterList/Pods-GameWithMonsterList.debug.xcconfig"; sourceTree = "<group>"; };
+		58FED10F91DF2A1D175E93B8 /* Pods-Epic7Guide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Epic7Guide.release.xcconfig"; path = "Pods/Target Support Files/Pods-Epic7Guide/Pods-Epic7Guide.release.xcconfig"; sourceTree = "<group>"; };
+		8B5AA471D6579EF3519E5F40 /* Pods_Epic7Guide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Epic7Guide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C100B73F1F62AF0F0067152F /* Epic7Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Epic7Guide.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C100B7581F62AF100067152F /* Epic7GuideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Epic7GuideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C100B7631F62AF100067152F /* Epic7GuideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Epic7GuideUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C100B7751F62AF600067152F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C140BE101F69137000D6B9AA /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+		C140BE121F69137A00D6B9AA /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		C140BE181F69172800D6B9AA /* HeroTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroTableViewCell.xib; sourceTree = "<group>"; };
+		C162084C2234CF07003D41CE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C162084D2234CF07003D41CE /* HeroDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroDetailViewController.m; sourceTree = "<group>"; };
+		C162084E2234CF07003D41CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C162084F2234CF07003D41CE /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C16208512234CF07003D41CE /* IdolTvHttpCallbackDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdolTvHttpCallbackDelegate.h; sourceTree = "<group>"; };
+		C16208552234CF07003D41CE /* IdolTvTypeConvertUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdolTvTypeConvertUtil.h; sourceTree = "<group>"; };
+		C16208562234CF07003D41CE /* CheckDeviceImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckDeviceImagePicker.h; sourceTree = "<group>"; };
+		C16208572234CF07003D41CE /* IdolTvTimeStampUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdolTvTimeStampUtil.h; sourceTree = "<group>"; };
+		C16208582234CF07003D41CE /* UIImage+UIImageExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+UIImageExtras.h"; sourceTree = "<group>"; };
+		C16208592234CF07003D41CE /* OhBikeXmlParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OhBikeXmlParser.m; sourceTree = "<group>"; };
+		C162085A2234CF07003D41CE /* IdolTvTimeStampUtil.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IdolTvTimeStampUtil.mm; sourceTree = "<group>"; };
+		C162085B2234CF07003D41CE /* IdolTvTypeConvertUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdolTvTypeConvertUtil.m; sourceTree = "<group>"; };
+		C162085C2234CF07003D41CE /* CheckDeviceImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckDeviceImagePicker.m; sourceTree = "<group>"; };
+		C162085D2234CF07003D41CE /* OhBikeXmlParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OhBikeXmlParser.h; sourceTree = "<group>"; };
+		C162085E2234CF07003D41CE /* UIImage+UIImageExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+UIImageExtras.m"; sourceTree = "<group>"; };
+		C16208602234CF07003D41CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C16208622234CF07003D41CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C16208632234CF07003D41CE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C16208652234CF07003D41CE /* IdolTvHttpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdolTvHttpManager.m; sourceTree = "<group>"; };
+		C16208672234CF07003D41CE /* IdolTvUploadImageDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdolTvUploadImageDelegate.h; sourceTree = "<group>"; };
+		C16208692234CF07003D41CE /* IdolTvHttpStatusStatic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdolTvHttpStatusStatic.h; sourceTree = "<group>"; };
+		C162086A2234CF07003D41CE /* IdolTvHttpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdolTvHttpManager.h; sourceTree = "<group>"; };
+		C162086C2234CF07003D41CE /* IdolTvHttpRequestProtocolKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdolTvHttpRequestProtocolKey.h; sourceTree = "<group>"; };
+		C162086D2234CF07003D41CE /* IdolTvHtmlMethodNameStatic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdolTvHtmlMethodNameStatic.h; sourceTree = "<group>"; };
+		C162086F2234CF07003D41CE /* HeroTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroTableViewCell.h; sourceTree = "<group>"; };
+		C16208712234CF07003D41CE /* HeroTableViewCellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroTableViewCellDelegate.h; sourceTree = "<group>"; };
+		C16208722234CF07003D41CE /* HeroTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroTableViewCell.m; sourceTree = "<group>"; };
+		C16208732234CF07003D41CE /* HeroDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroDetailViewController.h; sourceTree = "<group>"; };
+		C16208742234CF07003D41CE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C16208762234CF07003D41CE /* GameDataInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameDataInstance.m; sourceTree = "<group>"; };
+		C16208772234CF07003D41CE /* GameDataInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameDataInstance.h; sourceTree = "<group>"; };
+		C16208792234CF07003D41CE /* UserData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserData.h; sourceTree = "<group>"; };
+		C162087A2234CF07003D41CE /* UserData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserData.m; sourceTree = "<group>"; };
+		C162087D2234CF07003D41CE /* FOT-NewRodinProN-DB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FOT-NewRodinProN-DB.otf"; sourceTree = "<group>"; };
+		C162087E2234CF07003D41CE /* FOT-ComicReggaeStd-B.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FOT-ComicReggaeStd-B.otf"; sourceTree = "<group>"; };
+		C162087F2234CF07003D41CE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C16208802234CF07003D41CE /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C17AF5472234ED61008210CB /* Epic7GuideItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Epic7GuideItem.h; sourceTree = "<group>"; };
+		C17AF5482234ED61008210CB /* Epic7GuideItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Epic7GuideItem.m; sourceTree = "<group>"; };
+		C17AF54A22356626008210CB /* GuideDetailPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuideDetailPageViewController.h; sourceTree = "<group>"; };
+		C17AF54B22356626008210CB /* GuideDetailPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GuideDetailPageViewController.m; sourceTree = "<group>"; };
+		E815630481E6B8C31D0E2D65 /* Pods-GameWithMonsterList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameWithMonsterList.release.xcconfig"; path = "Pods/Target Support Files/Pods-GameWithMonsterList/Pods-GameWithMonsterList.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C100B73C1F62AF0F0067152F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C140BE131F69137A00D6B9AA /* libxml2.tbd in Frameworks */,
+				C140BE111F69137000D6B9AA /* libxml2.2.tbd in Frameworks */,
+				FF3FE89CB9B34DF6DE38D35C /* Pods_Epic7Guide.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C100B7551F62AF100067152F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C100B7601F62AF100067152F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD68FE4BD6F4332F47E5A28B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30AB5EE525C3E7682F278ABA /* Pods-GameWithMonsterList.debug.xcconfig */,
+				E815630481E6B8C31D0E2D65 /* Pods-GameWithMonsterList.release.xcconfig */,
+				103484C9DF4E3800535FF26F /* Pods-Epic7Guide.debug.xcconfig */,
+				58FED10F91DF2A1D175E93B8 /* Pods-Epic7Guide.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C100B7361F62AF0F0067152F = {
+			isa = PBXGroup;
+			children = (
+				C140BE181F69172800D6B9AA /* HeroTableViewCell.xib */,
+				C162084B2234CF07003D41CE /* Epic7Guide */,
+				C100B7401F62AF0F0067152F /* Products */,
+				C100B7751F62AF600067152F /* Podfile */,
+				AD68FE4BD6F4332F47E5A28B /* Pods */,
+				E8532376E8402DB14C21D94D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C100B7401F62AF0F0067152F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C100B73F1F62AF0F0067152F /* Epic7Guide.app */,
+				C100B7581F62AF100067152F /* Epic7GuideTests.xctest */,
+				C100B7631F62AF100067152F /* Epic7GuideUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C162084B2234CF07003D41CE /* Epic7Guide */ = {
+			isa = PBXGroup;
+			children = (
+				C162084C2234CF07003D41CE /* AppDelegate.h */,
+				C162084D2234CF07003D41CE /* HeroDetailViewController.m */,
+				C162084E2234CF07003D41CE /* Assets.xcassets */,
+				C162084F2234CF07003D41CE /* ViewController.m */,
+				C16208502234CF07003D41CE /* Delegate */,
+				C16208542234CF07003D41CE /* Utils */,
+				C162085F2234CF07003D41CE /* LaunchScreen.storyboard */,
+				C16208612234CF07003D41CE /* Main.storyboard */,
+				C16208632234CF07003D41CE /* main.m */,
+				C16208642234CF07003D41CE /* Http */,
+				C162086E2234CF07003D41CE /* GUI */,
+				C16208732234CF07003D41CE /* HeroDetailViewController.h */,
+				C16208742234CF07003D41CE /* AppDelegate.m */,
+				C16208752234CF07003D41CE /* Data */,
+				C162087B2234CF07003D41CE /* Assets */,
+				C162087F2234CF07003D41CE /* Info.plist */,
+				C16208802234CF07003D41CE /* ViewController.h */,
+				C17AF54A22356626008210CB /* GuideDetailPageViewController.h */,
+				C17AF54B22356626008210CB /* GuideDetailPageViewController.m */,
+			);
+			path = Epic7Guide;
+			sourceTree = "<group>";
+		};
+		C16208502234CF07003D41CE /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				C16208512234CF07003D41CE /* IdolTvHttpCallbackDelegate.h */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		C16208542234CF07003D41CE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C16208552234CF07003D41CE /* IdolTvTypeConvertUtil.h */,
+				C16208562234CF07003D41CE /* CheckDeviceImagePicker.h */,
+				C16208572234CF07003D41CE /* IdolTvTimeStampUtil.h */,
+				C16208582234CF07003D41CE /* UIImage+UIImageExtras.h */,
+				C16208592234CF07003D41CE /* OhBikeXmlParser.m */,
+				C162085A2234CF07003D41CE /* IdolTvTimeStampUtil.mm */,
+				C162085B2234CF07003D41CE /* IdolTvTypeConvertUtil.m */,
+				C162085C2234CF07003D41CE /* CheckDeviceImagePicker.m */,
+				C162085D2234CF07003D41CE /* OhBikeXmlParser.h */,
+				C162085E2234CF07003D41CE /* UIImage+UIImageExtras.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C16208642234CF07003D41CE /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				C16208652234CF07003D41CE /* IdolTvHttpManager.m */,
+				C16208662234CF07003D41CE /* Delegate */,
+				C16208682234CF07003D41CE /* Status */,
+				C162086A2234CF07003D41CE /* IdolTvHttpManager.h */,
+				C162086B2234CF07003D41CE /* Static */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		C16208662234CF07003D41CE /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				C16208672234CF07003D41CE /* IdolTvUploadImageDelegate.h */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		C16208682234CF07003D41CE /* Status */ = {
+			isa = PBXGroup;
+			children = (
+				C16208692234CF07003D41CE /* IdolTvHttpStatusStatic.h */,
+			);
+			path = Status;
+			sourceTree = "<group>";
+		};
+		C162086B2234CF07003D41CE /* Static */ = {
+			isa = PBXGroup;
+			children = (
+				C162086C2234CF07003D41CE /* IdolTvHttpRequestProtocolKey.h */,
+				C162086D2234CF07003D41CE /* IdolTvHtmlMethodNameStatic.h */,
+			);
+			path = Static;
+			sourceTree = "<group>";
+		};
+		C162086E2234CF07003D41CE /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				C162086F2234CF07003D41CE /* HeroTableViewCell.h */,
+				C16208702234CF07003D41CE /* Delegate */,
+				C16208722234CF07003D41CE /* HeroTableViewCell.m */,
+				C17AF5472234ED61008210CB /* Epic7GuideItem.h */,
+				C17AF5482234ED61008210CB /* Epic7GuideItem.m */,
+			);
+			path = GUI;
+			sourceTree = "<group>";
+		};
+		C16208702234CF07003D41CE /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				C16208712234CF07003D41CE /* HeroTableViewCellDelegate.h */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		C16208752234CF07003D41CE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C16208762234CF07003D41CE /* GameDataInstance.m */,
+				C16208772234CF07003D41CE /* GameDataInstance.h */,
+				C16208782234CF07003D41CE /* SubData */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C16208782234CF07003D41CE /* SubData */ = {
+			isa = PBXGroup;
+			children = (
+				C16208792234CF07003D41CE /* UserData.h */,
+				C162087A2234CF07003D41CE /* UserData.m */,
+			);
+			path = SubData;
+			sourceTree = "<group>";
+		};
+		C162087B2234CF07003D41CE /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C162087C2234CF07003D41CE /* fonts */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		C162087C2234CF07003D41CE /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C162087D2234CF07003D41CE /* FOT-NewRodinProN-DB.otf */,
+				C162087E2234CF07003D41CE /* FOT-ComicReggaeStd-B.otf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		E8532376E8402DB14C21D94D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C140BE121F69137A00D6B9AA /* libxml2.tbd */,
+				C140BE101F69137000D6B9AA /* libxml2.2.tbd */,
+				293E96385753389BA2300AFD /* Pods_GameWithMonsterList.framework */,
+				8B5AA471D6579EF3519E5F40 /* Pods_Epic7Guide.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C100B73E1F62AF0F0067152F /* Epic7Guide */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C100B76C1F62AF100067152F /* Build configuration list for PBXNativeTarget "Epic7Guide" */;
+			buildPhases = (
+				DFEEDFFDF90EDED74900464E /* [CP] Check Pods Manifest.lock */,
+				C100B73B1F62AF0F0067152F /* Sources */,
+				C100B73C1F62AF0F0067152F /* Frameworks */,
+				C100B73D1F62AF0F0067152F /* Resources */,
+				83464C9FC9AEC77832BE183C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Epic7Guide;
+			productName = GameWithMonsterList;
+			productReference = C100B73F1F62AF0F0067152F /* Epic7Guide.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C100B7571F62AF100067152F /* Epic7GuideTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C100B76F1F62AF100067152F /* Build configuration list for PBXNativeTarget "Epic7GuideTests" */;
+			buildPhases = (
+				C100B7541F62AF100067152F /* Sources */,
+				C100B7551F62AF100067152F /* Frameworks */,
+				C100B7561F62AF100067152F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C100B75A1F62AF100067152F /* PBXTargetDependency */,
+			);
+			name = Epic7GuideTests;
+			productName = GameWithMonsterListTests;
+			productReference = C100B7581F62AF100067152F /* Epic7GuideTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C100B7621F62AF100067152F /* Epic7GuideUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C100B7721F62AF100067152F /* Build configuration list for PBXNativeTarget "Epic7GuideUITests" */;
+			buildPhases = (
+				C100B75F1F62AF100067152F /* Sources */,
+				C100B7601F62AF100067152F /* Frameworks */,
+				C100B7611F62AF100067152F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C100B7651F62AF100067152F /* PBXTargetDependency */,
+			);
+			name = Epic7GuideUITests;
+			productName = GameWithMonsterListUITests;
+			productReference = C100B7631F62AF100067152F /* Epic7GuideUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C100B7371F62AF0F0067152F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "张真";
+				TargetAttributes = {
+					C100B73E1F62AF0F0067152F = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 48L4DTB496;
+						ProvisioningStyle = Automatic;
+					};
+					C100B7571F62AF100067152F = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = A8RKVQBA4T;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C100B73E1F62AF0F0067152F;
+					};
+					C100B7621F62AF100067152F = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = A8RKVQBA4T;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C100B73E1F62AF0F0067152F;
+					};
+				};
+			};
+			buildConfigurationList = C100B73A1F62AF0F0067152F /* Build configuration list for PBXProject "Epic7Guide" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C100B7361F62AF0F0067152F;
+			productRefGroup = C100B7401F62AF0F0067152F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C100B73E1F62AF0F0067152F /* Epic7Guide */,
+				C100B7571F62AF100067152F /* Epic7GuideTests */,
+				C100B7621F62AF100067152F /* Epic7GuideUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C100B73D1F62AF0F0067152F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C140BE191F69172800D6B9AA /* HeroTableViewCell.xib in Resources */,
+				C162088B2234CF07003D41CE /* Main.storyboard in Resources */,
+				C162088A2234CF07003D41CE /* LaunchScreen.storyboard in Resources */,
+				C16208822234CF07003D41CE /* Assets.xcassets in Resources */,
+				C16208932234CF07003D41CE /* FOT-ComicReggaeStd-B.otf in Resources */,
+				C16208922234CF07003D41CE /* FOT-NewRodinProN-DB.otf in Resources */,
+				C100B7761F62AF600067152F /* Podfile in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C100B7561F62AF100067152F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C100B7611F62AF100067152F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		83464C9FC9AEC77832BE183C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Epic7Guide/Pods-Epic7Guide-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/CMPopTipView/CMPopTipView.framework",
+				"${BUILT_PRODUCTS_DIR}/FFToast/FFToast.framework",
+				"${BUILT_PRODUCTS_DIR}/GDataXML-HTML/GDataXML_HTML.framework",
+				"${BUILT_PRODUCTS_DIR}/M13ProgressSuite/M13ProgressSuite.framework",
+				"${BUILT_PRODUCTS_DIR}/Ono/Ono.framework",
+				"${BUILT_PRODUCTS_DIR}/RATreeView/RATreeView.framework",
+				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CMPopTipView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FFToast.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GDataXML_HTML.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/M13ProgressSuite.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Ono.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RATreeView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Epic7Guide/Pods-Epic7Guide-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFEEDFFDF90EDED74900464E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Epic7Guide-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C100B73B1F62AF0F0067152F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C16208852234CF07003D41CE /* OhBikeXmlParser.m in Sources */,
+				C16208872234CF07003D41CE /* IdolTvTypeConvertUtil.m in Sources */,
+				C17AF5492234ED61008210CB /* Epic7GuideItem.m in Sources */,
+				C16208912234CF07003D41CE /* UserData.m in Sources */,
+				C16208862234CF07003D41CE /* IdolTvTimeStampUtil.mm in Sources */,
+				C162088E2234CF07003D41CE /* HeroTableViewCell.m in Sources */,
+				C16208832234CF07003D41CE /* ViewController.m in Sources */,
+				C16208882234CF07003D41CE /* CheckDeviceImagePicker.m in Sources */,
+				C16208892234CF07003D41CE /* UIImage+UIImageExtras.m in Sources */,
+				C162088F2234CF07003D41CE /* AppDelegate.m in Sources */,
+				C17AF54C22356626008210CB /* GuideDetailPageViewController.m in Sources */,
+				C162088D2234CF07003D41CE /* IdolTvHttpManager.m in Sources */,
+				C162088C2234CF07003D41CE /* main.m in Sources */,
+				C16208902234CF07003D41CE /* GameDataInstance.m in Sources */,
+				C16208812234CF07003D41CE /* HeroDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C100B7541F62AF100067152F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C100B75F1F62AF100067152F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C100B75A1F62AF100067152F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C100B73E1F62AF0F0067152F /* Epic7Guide */;
+			targetProxy = C100B7591F62AF100067152F /* PBXContainerItemProxy */;
+		};
+		C100B7651F62AF100067152F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C100B73E1F62AF0F0067152F /* Epic7Guide */;
+			targetProxy = C100B7641F62AF100067152F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C162085F2234CF07003D41CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C16208602234CF07003D41CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C16208612234CF07003D41CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C16208622234CF07003D41CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C100B76A1F62AF100067152F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C100B76B1F62AF100067152F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C100B76D1F62AF100067152F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 103484C9DF4E3800535FF26F /* Pods-Epic7Guide.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 48L4DTB496;
+				HEADER_SEARCH_PATHS = (
+					/usr/include/libxml2,
+					"/MyProject/GameWithMonsterList/Pods/**",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Epic7Guide/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"GDataXML_HTML\"",
+					"-framework",
+					"\"Ono\"",
+					"-framework",
+					"\"SSZipArchive\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lionelzhang.biketest3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C100B76E1F62AF100067152F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58FED10F91DF2A1D175E93B8 /* Pods-Epic7Guide.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 48L4DTB496;
+				HEADER_SEARCH_PATHS = (
+					/usr/include/libxml2,
+					"/MyProject/GameWithMonsterList/Pods/**",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Epic7Guide/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"GDataXML_HTML\"",
+					"-framework",
+					"\"Ono\"",
+					"-framework",
+					"\"SSZipArchive\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lionelzhang.biketest3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C100B7701F62AF100067152F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = A8RKVQBA4T;
+				INFOPLIST_FILE = GameWithMonsterListTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lionelzhang.GameWithMonsterListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Epic7Guide.app/Epic7Guide";
+			};
+			name = Debug;
+		};
+		C100B7711F62AF100067152F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = A8RKVQBA4T;
+				INFOPLIST_FILE = GameWithMonsterListTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lionelzhang.GameWithMonsterListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Epic7Guide.app/Epic7Guide";
+			};
+			name = Release;
+		};
+		C100B7731F62AF100067152F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = A8RKVQBA4T;
+				INFOPLIST_FILE = GameWithMonsterListUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lionelzhang.GameWithMonsterListUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GameWithMonsterList;
+			};
+			name = Debug;
+		};
+		C100B7741F62AF100067152F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = A8RKVQBA4T;
+				INFOPLIST_FILE = GameWithMonsterListUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lionelzhang.GameWithMonsterListUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GameWithMonsterList;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C100B73A1F62AF0F0067152F /* Build configuration list for PBXProject "Epic7Guide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C100B76A1F62AF100067152F /* Debug */,
+				C100B76B1F62AF100067152F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C100B76C1F62AF100067152F /* Build configuration list for PBXNativeTarget "Epic7Guide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C100B76D1F62AF100067152F /* Debug */,
+				C100B76E1F62AF100067152F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C100B76F1F62AF100067152F /* Build configuration list for PBXNativeTarget "Epic7GuideTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C100B7701F62AF100067152F /* Debug */,
+				C100B7711F62AF100067152F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C100B7721F62AF100067152F /* Build configuration list for PBXNativeTarget "Epic7GuideUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C100B7731F62AF100067152F /* Debug */,
+				C100B7741F62AF100067152F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C100B7371F62AF0F0067152F /* Project object */;
+}

@@ -1,0 +1,10 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking" "${PODS_CONFIGURATION_BUILD_DIR}/CMPopTipView" "${PODS_CONFIGURATION_BUILD_DIR}/FFToast" "${PODS_CONFIGURATION_BUILD_DIR}/GDataXML-HTML" "${PODS_CONFIGURATION_BUILD_DIR}/M13ProgressSuite" "${PODS_CONFIGURATION_BUILD_DIR}/Ono" "${PODS_CONFIGURATION_BUILD_DIR}/RATreeView" "${PODS_CONFIGURATION_BUILD_DIR}/SSZipArchive"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) $(SDKROOT)/usr/include/libxml2 $(PODS_ROOT)/GDataXML-HTML/libxml $(SDKROOT)/usr/include/libxml2
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_CFLAGS = $(inherited) -iquote "${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/CMPopTipView/CMPopTipView.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/FFToast/FFToast.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/GDataXML-HTML/GDataXML_HTML.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/M13ProgressSuite/M13ProgressSuite.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/Ono/Ono.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/RATreeView/RATreeView.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/SSZipArchive/SSZipArchive.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "AFNetworking" -framework "CMPopTipView" -framework "FFToast" -framework "GDataXML_HTML" -framework "M13ProgressSuite" -framework "Ono" -framework "RATreeView" -framework "SSZipArchive"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
