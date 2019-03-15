@@ -25,33 +25,11 @@
  */
 -(void)initData
 {
-    CGSize totalRect = self.contentView.frame.size;
-    int swFavorHeight = self.contentView.frame.size.height  * 0.5;
-    int swFavorWidth = swFavorHeight;
 }
 
 -(void)clickBtn
 {
     NSLog(@"fdaklfjdal");
-}
-
-/**
- 点击了收藏
- */
--(void)clickFavor:(UISwitch*)sw
-{
-    if(self.delegate != nil)
-    {
-        [self.delegate clickFavorButto:self.guideId AndIsFavor:sw.on];
-    }
-}
-
-/**
- 更改收藏状态
- */
--(void)changeHeroFavorWithStatus:(BOOL)isFavor
-{
-    [self.swFavor setOn:isFavor];
 }
 
 - (void)awakeFromNib {
@@ -132,10 +110,6 @@
         [self setTipIconStatus:2];
     }
     self.frame = CGRectMake(0+level * 10, self.frame.origin.y, self.frame.size.width, self.frame.size.height);
-//    self.imgHeroAvatar.frame = CGRectMake(10 + level *100, self.imgHeroAvatar.frame.origin.y, self.imgHeroAvatar.frame.size.width, self.imgHeroAvatar.frame.size.height);
-//
-//    self.txtHeroAbilityDetail.frame = CGRectMake(self.imgHeroAvatar.frame.origin.x+ self.imgHeroAvatar.frame.size.width +20+ level *10, self.txtHeroAbilityDetail.frame.origin.y, self.txtHeroAbilityDetail.frame.size.width, self.txtHeroAbilityDetail.frame.size.height);
-//
     NSOperationQueue *operationQueue = [[NSOperationQueue alloc] init];
     self.txtHeroAbilityDetail.text = name;
     
@@ -168,7 +142,7 @@
     {
         img = [UIImage imageWithData:[NSData dataWithContentsOfURL:imageUrl]];
         
-        BOOL result =[UIImagePNGRepresentation(img) writeToFile:[self getImagePath:self.imgUrl] atomically:YES];
+        [UIImagePNGRepresentation(img) writeToFile:[self getImagePath:self.imgUrl] atomically:YES];
     }
     dispatch_sync(dispatch_get_main_queue(), ^{
          self.imgHeroAvatar.image = img;
@@ -181,7 +155,7 @@
 
 - (NSString*)getImagePath:(NSString *)name {
     
-    NSArray *path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSArray *path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     
     NSString *docPath = [path objectAtIndex:0];
     

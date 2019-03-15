@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <GDataXMLNode.h>
 
 @interface UserData : NSObject
 //user id
@@ -29,6 +28,5 @@
 //user take type
 @property (nonatomic,copy) NSString *takeType;
 
--(void)ParseDataFromXml:(GDataXMLElement*)node;
 
 @end

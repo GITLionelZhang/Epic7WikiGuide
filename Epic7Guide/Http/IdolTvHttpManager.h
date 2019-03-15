@@ -48,16 +48,8 @@ typedef enum
 
 /**
  初始化http请求器
- @return <#return value description#>
  */
 -(void)initData;
-
-/**
- 下载文件
- 
- @param url 地址
- */
-- (void)beginDownloadFile:(NSString*)url;
 
 /**
  获取版本号

@@ -44,38 +44,6 @@
 }
 
 /**
-  下载文件
-
- @param url 地址
- */
-- (void)beginDownloadFile:(NSString*)url
-{
-    NSURL *URL = [NSURL URLWithString:url];
-    NSURLRequest *request = [NSURLRequest requestWithURL:URL];
-    NSURLCache *cache = [NSURLCache sharedURLCache];
-    [cache removeAllCachedResponses];
-    
-    NSURLSessionDownloadTask *downloadTask = [_afnManager downloadTaskWithRequest:request progress:nil destination:^NSURL *(NSURL *targetPath, NSURLResponse *response) {
-        
-        
-        NSURL *documentsDirectoryURL = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:NO error:nil];
-        NSString *oldPath  = [[documentsDirectoryURL URLByAppendingPathComponent:[response suggestedFilename]] path];
-        BOOL blDele= [[NSFileManager
-                        defaultManager] removeItemAtPath:oldPath error:nil];
-        return [documentsDirectoryURL URLByAppendingPathComponent:[response suggestedFilename]];
-    } completionHandler:^(NSURLResponse *response, NSURL *filePath, NSError *error) {
-        if(self.callback != nil)
-        {
-            [self.callback httpcallbackWithProtocolIdAndStringData:1 httpCallbackStatus:1 httpCallbackData:[filePath path] ];
-        }
-        NSLog(@"File downloaded to: %@", filePath);
-    }];
-    
-    //重新开始下载
-    [downloadTask resume];
-}
-
-/**
 加载html页面
 
 @param url <#url description#>

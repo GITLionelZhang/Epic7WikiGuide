@@ -8,15 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import <AFNetworking/AFNetworking.h>
-#import <Ono.h>
 #import "IdolTvHttpManager.h"
 #import <SSZipArchive/SSZipArchive.h>
-#import <GDataXMLNode.h>
 #import "UserData.h"
 #import "HeroTableViewCell.h"
 #import "HeroDetailViewController.h"
 #import "GameDataInstance.h"
-#import <CMPopTipView.h>
 #import <CoreTelephony/CTCellularData.h>
 #import "RATreeView.h"
 #import "Epic7GuideItem.h"
@@ -27,11 +24,7 @@
 
 @interface ViewController : UIViewController<
 IdolTvHttpCallbackDelegate,
-SSZipArchiveDelegate,
-UITableViewDelegate,
-UITableViewDataSource,
 UISearchBarDelegate,
-CMPopTipViewDelegate,
 HeroTableViewCellDelegate,
 RATreeViewDelegate,
 RATreeViewDataSource
@@ -42,11 +35,6 @@ RATreeViewDataSource
     NSMutableArray *guideList;
     
     BOOL isSearch;
-    
-    NSMutableArray *searchList;
-    
-    //tips视图
-    CMPopTipView *popTipView;
     
     NSString *fileUrl;
     

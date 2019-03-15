@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <GDataXMLNode.h>
 #import "GameDataInstance.h"
 #import "HeroTableViewCellDelegate.h"
 
@@ -37,19 +36,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *txtHeroAbilityDetail;
 @property (weak, nonatomic) IBOutlet UIImageView *imgArrow;
 
-@property (nonatomic,strong) UISwitch *swFavor;
-
 @property (nonatomic) UserData *heroData;
 
-
-
--(void)setDataWithXmlData:(UserData *)data;
-
-
-/**
- 更改收藏状态
- */
--(void)changeHeroFavorWithStatus:(BOOL)isFavor;
 
 - (void)setTipIconStatus:(int)status;
 

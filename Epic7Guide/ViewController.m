@@ -85,33 +85,12 @@
     Epic7GuideItem *dataObject = item;
     
     HeroTableViewCell *cell = [treeView dequeueReusableCellWithIdentifier:NSStringFromClass([HeroTableViewCell class])];
-    [cell setDataWithName:dataObject.name AndImgUrl:dataObject.iconUrl AndId:dataObject.guideId AndLevel:dataObject.level AndChildrenCount:dataObject.children == nil ?0:dataObject.children.count];
+    [cell setDataWithName:dataObject.name AndImgUrl:dataObject.iconUrl AndId:dataObject.guideId AndLevel:dataObject.level AndChildrenCount:dataObject.children == nil ?0:((int)dataObject.children.count)];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     return cell;
 }
 
-
-
--(void) changeToFavorList
-{
-    searchList = [[NSMutableArray alloc]init];
-    isSearch = YES;
-    for(NSString *heroId in favorList)
-    {
-        for(int i = 0; i< guideList.count;i++)
-        {
-            UserData *hero = guideList[i];
-            if([[NSString stringWithFormat:@"%d",hero.userId] isEqualToString: heroId])
-            {
-                [searchList addObject:hero];
-            }
-        }
-    }
-    [self.tvHeroInfo reloadData];
-    
-    [self.searchBar resignFirstResponder];
-}
 
 /**
  检测网络权限
@@ -133,34 +112,6 @@
     //    [[GameDataInstance Instance] loadUrl] =url;
     receive.loadUrl = @"https://モンスターストライク.gamewith.jp/article/show/3054";
     [self.navigationController pushViewController:receive animated:YES];
-}
-
-/**
- 显示提示
- */
--(void)showTips
-{
-    if (nil != popTipView)
-    {
-        // Dismiss
-        [popTipView dismissAnimated:YES];
-        popTipView = nil;
-    }
-    popTipView = [[CMPopTipView alloc]initWithCustomView:[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"HitSkillTips"]]];
-    popTipView.delegate = self;
-    popTipView.backgroundColor = [UIColor grayColor];
-    popTipView.textColor = [UIColor darkTextColor];
-    [popTipView presentPointingAtView:self.btnHitSkill inView:self.view animated:YES];
-}
-
-/**
- 提示框的delegate
- 
- @param popTipView <#popTipView description#>
- */
-- (void)popTipViewWasDismissedByUser:(CMPopTipView *)popTipView
-{
-    popTipView = nil;
 }
 
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
@@ -186,7 +137,7 @@
             rootItem = rootItem.parent;
             [itemList addObject:rootItem];
         }
-        for(int i = itemList.count -1 ;i >=0 ;i--)
+        for(int i = (int)(itemList.count -1) ;i >=0 ;i--)
         {
             [treeView expandRowForItem:itemList[i] expandChildren:NO withRowAnimation:RATreeViewRowAnimationTop];
         }
@@ -269,32 +220,6 @@
 
 - (void)httpcallbackWithProtocolIdAndStringData:(int)protoclId httpCallbackStatus:(int)status httpCallbackData:(NSString *)data
 {
-    if(protoclId == 1)
-    {
-        NSURL *documentsDirectoryURL = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:NO error:nil];
-        // 解压
-        NSString *destinationPath = [NSString stringWithFormat:@"%@/ms",[documentsDirectoryURL path]];
-        BOOL isDir = NO;
-        BOOL isExist = [[NSFileManager defaultManager] fileExistsAtPath:data isDirectory:&isDir];
-        if(isExist)
-        {
-        }
-        NSError *error;
-        [[NSFileManager defaultManager]removeItemAtPath:destinationPath error:&error];
-        BOOL isDone = [SSZipArchive unzipFileAtPath:data  toDestination:destinationPath delegate:self];
-        if(isDone)
-        {
-            [self readDataFromLocalFiles:destinationPath];
-        }
-        else
-        {
-            
-        }
-    }
-    else if(protoclId == 4)
-    {
-        NSLog(@"");
-    }
 }
 
 - (void)treeView:(RATreeView *)treeView didExpandRowForItem:(id)item
@@ -352,113 +277,6 @@
     
 }
 
-- (void)zipArchiveDidUnzipArchiveFile:(NSString *)zipFile entryPath:(NSString *)entryPath destPath:(NSString *)destPath
-{
-    [self showAllFiles:destPath];
-}
-
-- (void)zipArchiveDidUnzipArchiveAtPath:(NSString *)path zipInfo:(unz_global_info)zipInfo unzippedPath:(NSString *)unzippedPath
-{
-    [self showAllFiles:unzippedPath];
-}
-
-- (void)readDataFromLocalFiles:(NSString *)path
-{
-    NSFileManager * fileManger = [NSFileManager
-                                  defaultManager];
-    NSArray * dirArray = [fileManger
-                          contentsOfDirectoryAtPath:path error:nil];
-    for (NSString * str in dirArray) {
-        BOOL isDir = NO;
-        NSString *newPath =[NSString stringWithFormat:@"%@/%@",path,str];
-        BOOL isExist = [[NSFileManager defaultManager] fileExistsAtPath:newPath isDirectory:&isDir];
-        if(isDir)
-        {
-            [self readDataFromLocalFiles:newPath];
-        }
-        else
-        {
-            NSString *filePath = [path stringByAppendingPathComponent:str];
-            NSData *fileData = [[NSData alloc]initWithContentsOfFile:filePath];
-            GDataXMLDocument *doc = [[GDataXMLDocument alloc]initWithData:fileData error:nil];
-            GDataXMLElement *rootElement= [doc rootElement];
-            NSArray *elementList = [rootElement children];
-            for(int i = 0 ; i < elementList.count ;i++)
-            {
-                UserData * userData = [[UserData alloc]init];
-                [userData ParseDataFromXml:elementList[i]];
-                [guideList addObject:userData];
-            }
-        }
-    }
-}
-
-- (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary<NSString *,NSString *> *)attributeDict
-{
-    NSLog(@"");
-}
-
-- (void)showAllFiles:(NSString *)path
-{
-    // 1.判断文件还是目录
-    NSFileManager * fileManger = [NSFileManager
-                                  defaultManager];
-    
-    BOOL isDir = NO;
-    BOOL isExist = [fileManger
-                    fileExistsAtPath:path isDirectory:&isDir];
-    if (isExist) {
-        // 2.判断是不是目录
-        if (isDir) {
-            NSArray * dirArray = [fileManger
-                                  contentsOfDirectoryAtPath:path error:nil];
-            NSString * subPath =
-            nil;
-            for (NSString * str in dirArray) {
-                subPath  = [path stringByAppendingPathComponent:str];
-                BOOL issubDir = NO;
-                [fileManger fileExistsAtPath:subPath
-                                 isDirectory:&issubDir];
-                [self showAllFiles:subPath];
-            }
-            
-            
-        }else{
-            NSLog(@"%@",path);
-        }
-    }else{
-        NSLog(@"你打印的是目录或者不存在");
-    }
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    NSString *reuseIdentifier = [NSString stringWithFormat:@"Hero%d",indexPath.row];
-    
-    HeroTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier];
-
-    if (!cell) {
-        //这里换成自己定义的cell,并调用类方法加载xib文件
-        cell = [[HeroTableViewCell HeroTableViewCell] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdentifier];
-        [cell initData];
-        cell.delegate = self;
-    }
-    if(isSearch)
-    {
-        if(searchList.count > indexPath.row)
-        {
-            [cell setDataWithXmlData:searchList[indexPath.row]];
-        }
-    }
-    else
-    {
-        if(guideList.count > indexPath.row)
-        {
-            [cell setDataWithXmlData:guideList[indexPath.row]];
-        }
-    }
-    return cell;
-}
 
 -(void)clickFavor:(UISwitch*)sw
 {
@@ -493,56 +311,17 @@
     [userDef synchronize];
 }
 
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    NSString *url;
-    UserData *heroData;
-    if(isSearch)
-    {
-        heroData = searchList[indexPath.row];
-    }
-    else
-    {
-        heroData = guideList[indexPath.row];
-    }
-    
-    if([heroData.articleAddress containsString:@"tw"]||[heroData.articleAddress containsString:@"TW"])
-    {
-        url =heroData.articleAddress;
-    }
-    else{
-    url =[NSString stringWithFormat:@"https://モンスターストライク.gamewith.jp%@",heroData.articleAddress];
-    }
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    HeroDetailViewController *receive = [storyboard instantiateViewControllerWithIdentifier:@"HeroDetailViewController"];
-//    [[GameDataInstance Instance] loadUrl] =url;
-    receive.loadUrl = url;
-    [self.navigationController pushViewController:receive animated:YES];
-}
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 100;
-}
-
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    if(isSearch)
-        return searchList.count;
-    return guideList.count;
-}
 
 - (BOOL)isPureInt:(NSString*)string{
     NSScanner* scan = [NSScanner scannerWithString:string];
     int val;
     return[scan scanInt:&val] && [scan isAtEnd];
 }
-
 
 
 @end

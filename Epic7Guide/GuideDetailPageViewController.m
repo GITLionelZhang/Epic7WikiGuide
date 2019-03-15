@@ -29,7 +29,7 @@
     
     NSString *loadUrl = [[GameDataInstance Instance] loadUrl];
     
-    NSURLRequest *pageUrl = [NSURLRequest requestWithURL:[NSURL URLWithString:[loadUrl stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]];
+    NSURLRequest *pageUrl = [NSURLRequest requestWithURL:[NSURL URLWithString:[loadUrl stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]]]];
     [wvHeroDetail loadRequest:pageUrl];
     
     // Do any additional setup after loading the view.

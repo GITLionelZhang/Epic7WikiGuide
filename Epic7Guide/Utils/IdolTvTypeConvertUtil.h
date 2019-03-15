@@ -58,14 +58,6 @@
 +(NSString*)dataToHexString:(NSData*)data;
 
 /**
- 根据位置的列表获取json数据
-
- @param locList 位置数据
- @return json字符串
- */
-+(NSString*)locationListToJsonData:(NSArray *)locList;
-
-/**
  16进制转10进制数据
 
  @param hexStr 16进制的数据字符串
@@ -82,13 +74,6 @@
  */
 + (UIImage *)scaleUIImage:(UIImage *)image scaleToSize:(CGSize)size;
 
-/**
- aes256解码
- 
- @param sorStr 源串
- @return <#return value description#>
- */
-+ (NSDictionary*)decodeAes256:(NSString*)sorStr;
 
 
 /**
